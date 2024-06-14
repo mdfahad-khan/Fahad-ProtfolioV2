@@ -5,11 +5,10 @@ import Display from "./components/Display/Display";
 import Education from "./components/Education/Education";
 import Experience from "./components/Experience/Experience";
 import Experties from "./components/Experties/Experties";
+import Project from "./components/Project/Project";
 import ProjectsBtn from "./components/ProjectBtn/ProjectBtn";
 import Skills from "./components/Skills/Skills";
 import TabData from "./components/TabData/TabData";
-
-
 
 import Typing from "./components/Typing/Typing";
 // import WhyWorkWith from "./components/WhyWorkWith/WhyWorkWith";
@@ -20,19 +19,17 @@ import Typing from "./components/Typing/Typing";
 
 export default function Home() {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-hidden">
       <Display />
-
-
 
       <About />
       <Education />
       <Experience />
       <Skills />
       <Experties />
+      <Project />
 
       <Contact />
-
     </div>
   );
 }

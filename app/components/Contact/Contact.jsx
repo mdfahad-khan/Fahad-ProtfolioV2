@@ -1,5 +1,5 @@
 "use client";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 
@@ -108,25 +108,25 @@ const Contact = () => {
 
   return (
     <section
-      className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-gray-100 to-gray-200"
+      className="flex flex-col items-center justify-center min-h-screen bg-[#05152F]"
       id="contact"
     >
-      <div className="grid max-w-6xl grid-cols-1 gap-8 p-12 mt-5 bg-white rounded-md shadow-lg md:grid-cols-2">
+      <div className="grid max-w-6xl grid-cols-1 gap-8 p-12 mt-5 bg-[#142747] rounded-md shadow-lg md:grid-cols-2">
         <div className="text-center md:text-left">
           <h1 className="mt-4 text-2xl font-bold text-blue-500">Contact Us</h1>
-          <p className="mb-4 text-lg text-gray-700">
+          <p className="mb-4 text-lg text-white">
             Have questions or need assistance? Feel free to reach out to us
             using the contact form or the information below:
           </p>
-          <p className="text-lg text-gray-700">
+          <p className="text-lg text-white">
             <strong>Email:</strong> info@farseit.com
           </p>
-          <p className="text-lg text-gray-700">
+          <p className="text-lg text-white">
             <strong>Phone:</strong> 01761402081
           </p>
-          
+
           <div className="mt-4">
-            <p className="mb-2 text-lg text-gray-700">
+            <p className="mb-2 text-lg text-white">
               Connect with us on social media:
             </p>
             <div className="flex space-x-4">

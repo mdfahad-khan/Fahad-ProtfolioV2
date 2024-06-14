@@ -8,8 +8,17 @@ import { useEffect, useState } from "react";
 import navData from "../../../public/NavbarData/navData.json";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import "./Navbar.css"
-import { FaInstagram, FaTwitter, FaDribbble, FaCodepen, FaDiscord, FaGithub, FaTelegram, FaReddit } from 'react-icons/fa';
+import "./Navbar.css";
+import {
+  FaInstagram,
+  FaTwitter,
+  FaDribbble,
+  FaCodepen,
+  FaDiscord,
+  FaGithub,
+  FaTelegram,
+  FaReddit,
+} from "react-icons/fa";
 import ProjectsBtn from "../ProjectBtn/ProjectBtn";
 
 const imgVariants = {
@@ -109,19 +118,18 @@ const Navbar = () => {
     }
   };
   return (
-
     <header
       className="text-lg sticky top-0 z-50 flex items-center 
       bg-[#061e3d] justify-around w-full h-[90px] shadow-md border-b-2 border-gray-600 animate-glow-border border-l-0 "
-
     >
-
-      <div className="text-white md:ml-20 font-pacifico text-2xl font-bold">Evan Ahmed</div>
-
+      <div className="text-white md:ml-20 font-pacifico text-2xl font-bold">
+        Evan Ahmed
+      </div>
 
       <nav
-        className={`h-screen md:h-full grid place-items-center text-[#ccd6f6] text-sm fixed  top-0 ${isactive ? " translate-y-0" : "-translate-y-full md:translate-y-0"
-          }  bg-[#001118] md:bg-transparent right-0 md:static transition-all duration-500 z-50 absolute w-[60vw]`}
+        className={`h-screen md:h-full grid place-items-center text-[#ccd6f6] text-xl fixed  top-0 ${
+          isactive ? " translate-y-0" : "-translate-y-full md:translate-y-0"
+        }  bg-[#001118] md:bg-transparent right-0 md:static transition-all duration-500 z-50 absolute w-[60vw]`}
       >
         <div className=" absolute top-4 right-4 text-3xl md:hidden block">
           <FontAwesomeIcon icon={faCircleXmark} onClick={handleMenuClose} />
@@ -143,13 +151,14 @@ const Navbar = () => {
               initial="initial"
               whileInView="animate"
               key={index}
-              className="relative grid md:h-full place-items-center  text-lg "
+              className="relative grid md:h-full place-items-center  text-xl "
             >
               <Link
                 href={item.path}
                 onClick={(event) => scrollToSection(event, item.text)}
-                className={`navlink w-[70px] grid place-items-center hover:border  hover:border-b-4  hover:animate-glow-border border-blue-500  ${activeSection === item.text ? "text-blue" : ""
-                  }`}
+                className={`navlink w-[70px] grid place-items-center hover:border  hover:border-b-4  hover:animate-glow-border border-blue-500  ${
+                  activeSection === item.text ? "text-blue" : ""
+                }`}
               >
                 {item.text}
               </Link>
@@ -158,10 +167,9 @@ const Navbar = () => {
         </ul>
       </nav>
       <div className="text-white ">
-
-        <div className="mt-4 z-50"><ProjectsBtn className="mt-4" /></div>
-
-
+        <div className="mt-4 z-50">
+          <ProjectsBtn className="mt-4" />
+        </div>
 
         <span className="text-3xl absolute top-[50%] -translate-y-[50%] right-3 md:hidden block">
           <FontAwesomeIcon icon={faBars} onClick={handleMenuOpen} />

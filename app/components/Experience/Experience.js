@@ -10,19 +10,25 @@ import { zoomIn, staggerContainer } from "../utils/Animation";
 const Experience = () => {
   return (
     <section
-      className='px-4 md:px-6 pt-10 pb-5 bg-black'
+      className="px-4 md:px-6 pt-10 pb-5 bg-[#050817]"
       id="experience"
+      style={{
+        // Gradient from top to bottom
+        background:
+          "radial-gradient(circle at center top, #041e42 1%, #050816 50%)",
+      }}
     >
       <div className="container">
-        <Heading
-          title={"Experience"}
-          subTitle={"My Work"}
-          className={"items-center mb-2 text-white"}
-        />
+        <div className="item-center  text-center">
+          <button className="bg-blue-500 items-center text-center mb-10 text-2xl font-bold text-white px-4 rounded-md">
+            {" "}
+            Work Experience
+          </button>
+        </div>
 
         <div className="relative pt-12">
           <div className="absolute left-0 top-0 md:left-1/2 md:-translate-x-1/2 flex flex-col items-center h-full  ">
-            <div className="rounded-full w-fit p-2 border-[#70e0ff] border-2 text-3xl text-blue-500">
+            <div className="rounded-full w-fit p-2 border-[#70e0ff] animate-glow-border border-2 text-3xl text-[#70E0FF]">
               <MdWorkHistory />
             </div>
             <motion.div
@@ -52,7 +58,7 @@ const Experience = () => {
                   className="relative rounded-lg shadow-md shadow-[#70e0ff] flex flex-col gap-1 p-5 w-full md:w-1/2 items-start md:items-end md:text-right"
                   variants={zoomIn(0.3, 0.5)}
                 >
-                  <p className="text-[red] font-bold text-xs ">
+                  <p className="text-[#f41587] font-bold text-xs ">
                     May 2020 - February 2022
                   </p>
                   <h3 className="text-[#70e0ff] font-semibold text-2xl">
@@ -69,14 +75,14 @@ const Experience = () => {
                     prototyping.
                   </p>
                   <div className="flex items-center absolute top-1/2 rotate-180 -translate-y-1/2 w-[26px] -left-[26px] md:w-11 md:rotate-0 md:-right-11 md:left-auto">
-                    <div className="h-[2px] bg-[red] flex-1" />
-                    <div className="h-3 rounded-full bg-[red] w-3" />
+                    <div className="h-[2px] bg-[#70E0FF] flex-1" />
+                    <div className="h-3 rounded-full bg-[#70E0FF] animate-glow-border w-3" />
                   </div>
                 </motion.div>
 
                 {/* ----- */}
                 <div className="hidden md:block w-1/2">
-                  <p className="text-red-500 font-bold">
+                  <p className="text-[#70e0ff] font-bold">
                     May 2020 - February 2022
                   </p>
                 </div>
@@ -95,7 +101,7 @@ const Experience = () => {
                   className="relative rounded-lg shadow-md shadow-[#70e0ff] flex flex-col gap-2 p-5 w-full md:w-1/2 items-start"
                   variants={zoomIn(1, 0.5)}
                 >
-                  <p className="text-[red] font-bold text-xs ">
+                  <p className="text-[#f41587] font-bold text-xs ">
                     June 2022 - April 2023
                   </p>
                   <h3 className="text-[#70e0ff] font-semibold text-2xl w-full">
@@ -110,14 +116,14 @@ const Experience = () => {
                     development team to implement new features and enhancements.
                   </p>
                   <div className="flex items-center absolute top-1/2 rotate-180 -translate-y-1/2 w-[26px] -left-[26px] md:w-11 md:-left-11">
-                    <div className="h-[2px] bg-[red] flex-1" />
-                    <div className="h-3 rounded-full bg-[red] w-3" />
+                    <div className="h-[2px] bg-[#70E0FF] flex-1" />
+                    <div className="h-3 rounded-full bg-[#70E0FF] animate-glow-border w-3" />
                   </div>
                 </motion.div>
 
                 {/* ----- */}
                 <div className="hidden md:flex w-1/2 justify-end">
-                  <p className="text-red-500 font-bold">
+                  <p className="text-[#70e0ff] font-bold">
                     June 2022 - April 2023
                   </p>
                 </div>
