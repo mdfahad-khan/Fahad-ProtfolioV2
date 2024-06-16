@@ -13,8 +13,8 @@ import {
 
 const ProjectsBtn = () => {
   return (
-    <div className="main w-16 ">
-      <div className="all flex flex-wrap z-1 w-[12em]  justify-center hover:bg-transparent">
+    <div className="main w-12 ">
+      <div className="all flex flex-wrap  z-30 w-[8em]  justify-center hover:bg-transparent">
         <div className="card">
           <FaInstagram className="icon instagram" />
         </div>
@@ -43,8 +43,8 @@ const ProjectsBtn = () => {
           <FaReddit className="icon reddit" />
         </div>
 
-        <a class="text text-white mr-6">
-          <span className="">CONNECT WITH ME</span>
+        <a class="text text-white mr-10">
+          <span className="">CONNECT</span>
         </a>
         <div className="main_back"></div>
       </div>

@@ -1,5 +1,5 @@
 .main_back {
-  position: absolute;
+  position: relative;
   border-radius: 10px;
   transform: rotate(0deg);
   width: 11em;
@@ -16,16 +16,16 @@
 .main {
   display: flex;
   flex-wrap: wrap;
-  width: 12em;
+  width: 8em;
   height: 3em;
   align-items: center;
   justify-content: center;
-  z-index: -1;
+  z-index: 30;
 }
 
 .card {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-top-left-radius: 10px;
   background: transparent;
   transition: 0.4s ease-in-out, 0.2s background-color ease-in-out,
@@ -37,6 +37,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 30;
 }
 
 .icon {
@@ -83,7 +84,7 @@
 }
 
 .text:hover {
-  width: 12em;
+  width: 8em;
   cursor: pointer;
   z-index: 50;
 }
@@ -98,6 +99,7 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(255, 255, 255, 0.2);
+  z-index: 30;
 }
 
 .main:hover .card:nth-child(5) {
@@ -106,7 +108,7 @@
 
 .main:hover .text {
   opacity: 0;
-  z-index: -3;
+  z-index: 30;
 }
 
 .main:hover .icon {
@@ -269,8 +271,8 @@
 .text span {
   position: relative;
   display: block;
-  padding: 3px 8px;
-  font-size: 15px;
+  padding: 3px 6px;
+  font-size: 13px;
   background: #061e3d;
   border-radius: 2px;
   height: 100%;
