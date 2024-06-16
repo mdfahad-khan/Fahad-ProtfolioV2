@@ -43,7 +43,7 @@ const ProjectsBtn = () => {
           <FaReddit className="icon reddit" />
         </div>
 
-        <a class="text text-white mr-10">
+        <a class="text text-white md:mr-10 mr-[80px]">
           <span className="">CONNECT</span>
         </a>
         <div className="main_back"></div>
