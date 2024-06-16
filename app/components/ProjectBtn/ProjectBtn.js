@@ -14,7 +14,7 @@ import {
 const ProjectsBtn = () => {
   return (
     <div className="main w-12 ">
-      <div className="all flex flex-wrap hover:absolute hover:right-10 hover:top-1 z-30 w-[8em]  justify-center hover:bg-transparent">
+      <div className="all flex flex-wrap absolute right-10 top-4 z-30 w-[8em]  justify-center hover:bg-transparent">
         <div className="card">
           <FaInstagram className="icon instagram" />
         </div>
@@ -43,7 +43,7 @@ const ProjectsBtn = () => {
           <FaReddit className="icon reddit" />
         </div>
 
-        <a class="text text-white md:mr-10 ">
+        <a class="text text-white md:mr-10 mr-[60px]">
           <span className="">CONNECT</span>
         </a>
         <div className="main_back"></div>
