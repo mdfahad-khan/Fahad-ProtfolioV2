@@ -267,7 +267,7 @@ const Display = () => {
                   strokeDasharray="100%"
                 />
               </svg>
-              <span className="relative z-10">MY WORK</span>
+              <section className="relative z-10">MY WORK</section>
             </button>
           </motion.div>
         </div>

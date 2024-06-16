@@ -122,7 +122,7 @@ const Navbar = () => {
       className="text-lg sticky top-0 z-50 flex items-center 
       bg-[#061e3d] justify-around w-full h-[90px] shadow-md border-b-2 border-gray-600 animate-glow-border border-l-0 "
     >
-      <div className="text-white md:ml-20 font-pacifico text-2xl font-bold">
+      <div className="text-white md:ml-20 font-pacifico text-xl md:text-2xl font-bold">
         Evan Ahmed
       </div>
 

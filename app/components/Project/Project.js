@@ -7,7 +7,22 @@ import {
   FaNodeJs,
   FaGithub,
   FaExternalLinkAlt,
+  FaBootstrap,
+  FaSass,
+  FaDjango,
 } from "react-icons/fa";
+import {
+  SiExpress,
+  SiMongodb,
+  SiNextdotjs,
+  SiNestjs,
+  SiPostgresql,
+  SiTailwindcss,
+  SiDotnet,
+  SiMysql,
+  SiCsharp,
+  SiOracle,
+} from "react-icons/si";
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 import projectData from "@/public/ProjectData/projectData"; // Adjust the import path as needed
@@ -18,9 +33,21 @@ const iconComponents = {
   FaHtml5: FaHtml5,
   FaCss3Alt: FaCss3Alt,
   FaNodeJs: FaNodeJs,
+  SiExpress: SiExpress,
+  SiMongodb: SiMongodb,
+  SiNextdotjs: SiNextdotjs,
+  SiNestjs: SiNestjs,
+  SiPostgresql: SiPostgresql,
+  SiTailwindcss: SiTailwindcss,
+  SiDotnet: SiDotnet,
+  SiMysql: SiMysql,
+  FaBootstrap: FaBootstrap,
+  FaSass: FaSass,
+
+  SiCsharp: SiCsharp,
+  SiOracle: SiOracle,
   // Add more icons as needed
 };
-
 const divVariants = {
   initial: {
     x: -100,
@@ -111,13 +138,14 @@ const Project = () => {
   }, []);
 
   return (
-    <div
+    <section
       className="min-h-screen"
       style={{
         // Gradient from top to bottom
         background:
           "radial-gradient(circle at center top, #041e42 1%, #050816 30%)",
       }}
+      id="projects"
     >
       <div className="container mx-auto py-4">
         {projectData.map((project, index) => {
@@ -158,7 +186,7 @@ const Project = () => {
                 }`}
               >
                 <h1
-                  className={`text-3xl font-extrabold mb-2 bg-gradient-to-r from-[#6CD7F6] via-teal-500 to-pink-500 bg-clip-text text-transparent ${
+                  className={`text-[23px] font-extrabold mb-2 bg-gradient-to-r from-[#6CD7F6] via-teal-500 to-pink-500 bg-clip-text text-transparent ${
                     isEven ? "md:text-right" : "md:text-left"
                   }`}
                 >
@@ -210,7 +238,7 @@ const Project = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

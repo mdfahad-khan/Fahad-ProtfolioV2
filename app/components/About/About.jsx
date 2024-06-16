@@ -187,7 +187,7 @@ const About = () => {
     >
       <fieldset className="md:h-[80vh] text-white border-2 md:px-6 px-2 animate-glow-border mb-6">
         <legend className="bg-blue-500  text-center text-2xl font-bold text-white px-4 rounded-md">
-          ABOUT ME
+          About Me
         </legend>
         <div className="max-w-full  mx-auto 2xl:h-[60vh] sm:h-auto p-0 rounded-md shadow-lg mt-3 text-black overflow-hidden xl:flex 2xl:flex lg:flex md:flex justify-center">
           <div

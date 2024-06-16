@@ -10,7 +10,7 @@ import { fadeIn } from "../utils/Animation";
 const Experties = () => {
   return (
     <section
-      className="px-4 md:px-6 pt-10 pb-5 bg-[#050816] h-screen"
+      className="px-4 md:px-6 pt-5 pb-5 bg-[#050816] min-h-screen"
       id="skills"
       style={{
         // Gradient from top to bottom
@@ -24,7 +24,7 @@ const Experties = () => {
         </button>
       </div>
 
-      <div className="bubble-items justify-center hidden gap-4 md:mt-40 mt-4 flex-wrap md:flex ">
+      <div className="bubble-items justify-center hidden gap-4 md:mt-20 mt-4 flex-wrap md:flex ">
         {skills.map((skill) => (
           <motion.div
             key={skill.title}

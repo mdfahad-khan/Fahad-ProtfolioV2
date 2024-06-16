@@ -1,48 +1,101 @@
 // projectData.js
 const projectData = [
   {
-    title: "Project 1",
+    title: "E-commerce Website MERN Stack",
     description:
-      "Experience a dynamic online marketplace powered by TypeScript, Tailwind CSS, Nest.js, and Next.js. Seamlessly connecting buyers and sellers of farm-related products and prime land parcels. With distinct user roles including Admin, Manager, Seller, and User, the platform offers a streamlined experience. Featuring a captivating landing page showcasing farm equipment and enticing land listings. Dive into the demo via the project link to witness its functionality firsthand.",
-    languages: ["React", "JavaScript", "HTML", "CSS", "Node.js"],
+      "Experience a robust e-commerce platform built with the MERN stack (MongoDB, Express, React, Node.js). This website features secure user authentication, role-based access, and a comprehensive admin dashboard. Sellers can manage their products and inventory seamlessly, while buyers enjoy a smooth shopping experience with advanced search and filter options. The platform also integrates payment gateways and Cloudinary for image storage, ensuring a responsive and efficient user experience.",
+    languages: ["React", "Express", "NodeJs", "MongoDB"],
     image: "/1.png", // Make sure the image is placed correctly in public/images
     githubLink: "https://github.com/username/project1",
     liveLink: "https://live-link1.com",
     icons: {
       React: "FaReact",
-      JavaScript: "FaJsSquare",
-      HTML: "FaHtml5",
-      CSS: "FaCss3Alt",
-      "Node.js": "FaNodeJs",
+      Express: "SiExpress",
+      NodeJs: "FaNodeJs",
+      MongoDB: "SiMongodb",
     },
   },
   {
-    title: "Project 2",
+    title: "Shob Artist (Client Work)",
     description:
-      "Experience a dynamic online marketplace powered by TypeScript, Tailwind CSS, Nest.js, and Next.js. Seamlessly connecting buyers and sellers of farm-related products and prime land parcels. With distinct user roles including Admin, Manager, Seller, and User, the platform offers a streamlined experience. Featuring a captivating landing page showcasing farm equipment and enticing land listings. Dive into the demo via the project link to witness its functionality firsthand.",
-    languages: ["React", "JavaScript"],
+      "Developed the frontend of a modern dropshipping website using React, Bootstrap, Sass, and TailwindCSS. The platform offers a sleek, responsive user interface designed to enhance the shopping experience. The website integrates seamlessly with a Django backend, ensuring efficient data handling and robust performance. This project showcases my ability to create visually appealing and highly functional web interfaces.",
+    languages: ["React", "Bootstrap", "Sass", "TailwindCSS"],
+    image: "/1.png", // Make sure the image is placed correctly in public/images
+    githubLink: "https://github.com/username/project1",
+    liveLink: "http://139.59.79.215/",
+    icons: {
+      React: "FaReact",
+      Bootstrap: "FaBootstrap",
+      Sass: "FaSass",
+      TailwindCSS: "SiTailwindcss",
+    },
+  },
+  {
+    title: "Nature Lease a inovative solution",
+    description:
+      "Experience a dynamic online marketplace powered by TypeScript, Tailwind CSS, Nest.js, and Next.js. Seamlessly connecting buyers and sellers of farm-related products and prime land parcels. With distinct user roles including Admin, Manager, Seller, and User, the platform offers a streamlined experience. Featuring a captivating landing page showcasing farm equipment and enticing land listings. Dive into the demo via the project link to witness its functionality firsthand",
+    languages: ["NextJs", "NestJs", "Postgresql", "TailwindCSS"],
     image: "/3.png", // Make sure the image is placed correctly in public/images
     githubLink: "https://github.com/username/project2",
     liveLink: "https://live-link2.com",
     icons: {
-      React: "FaReact",
-      JavaScript: "FaJsSquare",
+      NextJs: "SiNextdotjs",
+      NestJs: "SiNestjs",
+      Postgresql: "SiPostgresql",
+      TailwindCSS: "SiTailwindcss",
     },
   },
   {
-    title: "Project 1",
+    title: "Blood Donation and Healthcare Platform",
     description:
-      "Experience a dynamic online marketplace powered by TypeScript, Tailwind CSS, Nest.js, and Next.js. Seamlessly connecting buyers and sellers of farm-related products and prime land parcels. With distinct user roles including Admin, Manager, Seller, and User, the platform offers a streamlined experience. Featuring a captivating landing page showcasing farm equipment and enticing land listings. Dive into the demo via the project link to witness its functionality firsthand.",
-    languages: ["React", "JavaScript", "HTML", "CSS", "Node.js"],
+      "A comprehensive platform designed to facilitate blood donation and healthcare support for those in need. With three distinct user roles - Admin, Blood Donor/Fund Donor, and Receiver - the platform enables seamless coordination between donors and recipients. Developed using ASP.NET for backend functionality and Next.js with Tailwind CSS for frontend design, our platform serves as a lifeline for individuals in critical need of healthcare services.",
+    languages: ["NextJs", "AspDotNet", "TailwindCSS", "MySQL"],
+    image: "/1.png", // Make sure the image is placed correctly in public/images
+    githubLink: "https://github.com/username/project1",
+    liveLink: "https://live-link1.com",
+    icons: {
+      NextJs: "SiNextdotjs",
+      AspDotNet: "SiDotnet",
+      TailwindCSS: "SiTailwindcss",
+      MySQL: "SiMysql",
+    },
+  },
+  {
+    title: "Doctor Appointment System (Using C#)",
+    description:
+      "Developed a comprehensive C# solution for efficiently managing appointments, from scheduling to maintaining patient records. This system streamlines the entire appointment process, providing an intuitive interface for both doctors and patients. Key features include automated reminders, real-time updates, and secure data handling, enhancing overall efficiency and patient satisfaction.",
+    languages: ["C#", "Oracle"],
+    image: "/1.png", // Make sure the image is placed correctly in public/images
+    githubLink: "https://github.com/username/project1",
+    liveLink: "https://live-link1.com",
+    icons: {
+      "C#": "SiCsharp",
+      Oracle: "SiOracle",
+    },
+  },
+  {
+    title: "Super shop Management System",
+    description:
+      "Seamlessly manage a super shop with distinct roles for admin, seller, and buyer, streamlining operations and enhancing the overall customer experience. The admin can oversee all shop activities, manage users, and generate insightful reports. Sellers have access to inventory management, product listings, and order tracking, ensuring efficient workflow. Buyers enjoy a smooth shopping experience with easy navigation, secure payment options, and real-time order updates. Explore the project link for a firsthand demo and see how this comprehensive system can revolutionize shop management.",
+    languages: ["C#", "Oracle"],
+    image: "/1.png", // Make sure the image is placed correctly in public/images
+    githubLink: "https://github.com/username/project1",
+    liveLink: "https://live-link1.com",
+    icons: {
+      "C#": "SiCsharp",
+      Oracle: "SiOracle",
+    },
+  },
+  {
+    title: "Dream Shop 360 (E-commerce)",
+    description:
+      "A dynamic e-commerce platform created with  CSS, JavaScript, Next.js, Revolutionizing the shopping experience by offering a comprehensive range of products, starting with clothing and electronics, with plans for expansion. Visit the project link for a firsthand demonstration",
+    languages: ["React"],
     image: "/1.png", // Make sure the image is placed correctly in public/images
     githubLink: "https://github.com/username/project1",
     liveLink: "https://live-link1.com",
     icons: {
       React: "FaReact",
-      JavaScript: "FaJsSquare",
-      HTML: "FaHtml5",
-      CSS: "FaCss3Alt",
-      "Node.js": "FaNodeJs",
     },
   },
   // Add more projects as needed

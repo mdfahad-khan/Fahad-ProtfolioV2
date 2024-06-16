@@ -82,7 +82,7 @@
   fill: rgb(255, 69, 0);
 }
 
-.main:hover {
+.text:hover {
   width: 12em;
   cursor: pointer;
   z-index: 50;

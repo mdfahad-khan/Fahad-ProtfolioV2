@@ -2,7 +2,55 @@
 import emailjs from "@emailjs/browser";
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
+import { BiPhone } from "react-icons/bi";
+import { BsSendArrowUpFill } from "react-icons/bs";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { MdAttachEmail, MdOutlineAttachEmail } from "react-icons/md";
 
+const div1 = {
+  initial: {
+    x: 200,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      staggerChildren: 0.1,
+    },
+  },
+  scrollButton: {
+    opacity: 0,
+    y: 10,
+    transition: {
+      duration: 1,
+      repeat: Infinity,
+    },
+  },
+};
+const div2 = {
+  initial: {
+    x: -200,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      staggerChildren: 0.1,
+    },
+  },
+  scrollButton: {
+    opacity: 0,
+    y: 10,
+    transition: {
+      duration: 1,
+      repeat: Infinity,
+    },
+  },
+};
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -108,64 +156,100 @@ const Contact = () => {
 
   return (
     <section
-      className="flex flex-col items-center justify-center min-h-screen bg-[#05152F]"
+      className="flex flex-col items-center content-center justify-center  min-h-screen bg-[#05152F]"
       id="contact"
     >
-      <div className="grid max-w-6xl grid-cols-1 gap-8 p-12 mt-5 bg-[#142747] rounded-md shadow-lg md:grid-cols-2">
-        <div className="text-center md:text-left">
-          <h1 className="mt-4 text-2xl font-bold text-blue-500">Contact Us</h1>
-          <p className="mb-4 text-lg text-white">
+      <div className="grid max-w-7xl grid-cols-1 gap-8 p-12 mt-5  rounded-md shadow-lg md:grid-cols-2">
+        <motion.div
+          className="text-center md:text-left bg-[#1F2937] md:h-80 mt-16  p-4 rounded-md"
+          variants={div1}
+          initial="initial"
+          whileInView="animate"
+        >
+          <h1 className="mt-1 mb-3 text-3xl font-bold text-slate-300">
+            Contact Us
+          </h1>
+          <p className="mb-4 md:text-lg text-slate-400">
             Have questions or need assistance? Feel free to reach out to us
             using the contact form or the information below:
           </p>
-          <p className="text-lg text-white">
-            <strong>Email:</strong> info@farseit.com
+          <p className=" text-slate-300 flex items-center gap-2 text-xl">
+            <MdOutlineAttachEmail />
+            <span>Email:info@farseit.com</span>
           </p>
-          <p className="text-lg text-white">
-            <strong>Phone:</strong> 01761402081
+          <p className=" text-slate-300 flex items-center text-xl gap-2">
+            <BiPhone />
+            <span>Phone: 01761402081</span>
           </p>
 
           <div className="mt-4">
-            <p className="mb-2 text-lg text-white">
+            <p className="mb-2 md:text-xl text-[16px] font-semibold text-slate-300">
               Connect with us on social media:
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 text-2xl text-slate-300">
               <a
                 href="https://www.facebook.com/farseitsolution?mibextid=LQQJ4d"
-                className="text-blue-500 hover:text-blue-700"
+                className=" hover:text-blue-700"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Facebook
+                <FaFacebook />
               </a>
               <a
                 href="https://twitter.com/FarseIT"
-                className="text-blue-500 hover:text-blue-700"
+                className=" hover:text-blue-700"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Twitter
+                <FaTwitter />
+              </a>
+              <a
+                href="https://twitter.com/FarseIT"
+                className=" hover:text-blue-700"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://twitter.com/FarseIT"
+                className=" hover:text-blue-700"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin />
               </a>
             </div>
           </div>
-        </div>
-        <div className="relative flex-1">
-          <motion.form
+        </motion.div>
+        <motion.div
+          className="relative flex-1 bg-[#1F2937] p-4 rounded-md"
+          variants={div2}
+          initial="initial"
+          whileInView="animate"
+        >
+          <form
             ref={formRef}
             onSubmit={handleSubmit}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="p-4 bg-slate-100"
+            className=""
           >
+            <span className="text-xl mb-1 text-slate-300 font-semibold">
+              Get in Touch With Me
+            </span>
+            <div className="text-sm mb-4 text-slate-400">
+              Use the form below to send us a message or ask any questions
+            </div>
             <input
               type="text"
               required
-              placeholder="Name"
+              placeholder="Enter Your Name"
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="block w-full px-4 py-2 mb-2 border-gray-300 rounded-md focus:border-green-500 focus:ring-green-500 focus:outline-none"
+              className="block w-full px-4 py-2 text-stone-200 text-[18px] mb-2 border-gray-500 border-2  rounded-md bg-transparent focus:border-green-500 focus:ring-green-500 focus:outline-none"
             />
             {formErrors.name && (
               <p className="mb-2 text-sm text-red-500">{formErrors.name}</p>
@@ -173,11 +257,11 @@ const Contact = () => {
             <input
               type="email"
               required
-              placeholder="Email"
+              placeholder="Enter Your Email"
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="block w-full px-4 py-2 mb-2 border-gray-300 rounded-md focus:border-green-500 focus:ring-green-500 focus:outline-none"
+              className="block w-full px-4 py-2 mb-2 text-stone-200 text-[18px] border-gray-500 border-2 rounded-md bg-transparent focus:border-green-500 focus:ring-green-500 focus:outline-none"
             />
             {formErrors.email && (
               <p className="mb-2 text-sm text-red-500">{formErrors.email}</p>
@@ -189,18 +273,21 @@ const Contact = () => {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              className="block w-full px-4 py-2 mb-2 border-gray-300 rounded-md focus:border-green-500 focus:ring-green-500 focus:outline-none"
+              className="block w-full px-4 py-2 mb-2 text-stone-200 text-[18px] border-gray-500 border-2 resize-none rounded-md bg-transparent focus:border-green-500 focus:ring-green-500 focus:outline-none"
             />
             {formErrors.message && (
               <p className="mb-2 text-sm text-red-500">{formErrors.message}</p>
             )}
-            <button
-              type="submit"
-              className="w-full px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-green-600"
-              disabled={isLoading}
-            >
-              {isLoading ? "Submitting..." : "Submit"}
-            </button>
+            <div className="text-center">
+              <button
+                type="submit"
+                className="  py-2 mt-2 w-60 text-center items-center font-semibold text-slate-600 bg-slate-300 rounded-md hover:bg-slate-400"
+                disabled={isLoading}
+              >
+                {isLoading ? "Submitting..." : "Send Message"}{" "}
+                {/* <BsSendArrowUpFill /> */}
+              </button>
+            </div>
             {isError && (
               <p className="mt-2 text-sm text-red-500">
                 Failed to submit the form. Please try again later.
@@ -211,8 +298,8 @@ const Contact = () => {
                 Your message has been sent successfully!
               </p>
             )}
-          </motion.form>
-        </div>
+          </form>
+        </motion.div>
       </div>
     </section>
   );

@@ -46,7 +46,7 @@ const textVariant1 = {
 const Education = () => {
   return (
     <section
-      className="bg-[#050816]  md:px-5 px-1 min-h-[80vh] flex flex-col justify-end"
+      className="bg-[#050816]  md:px-5 px-1 min-h-[70vh]  flex flex-col justify-end"
       id="about"
       style={{
         // Gradient from top to bottom
@@ -54,11 +54,11 @@ const Education = () => {
           "radial-gradient(circle at center top, #041e42 1%, #050816 50%)",
       }}
     >
-      <fieldset className=" text-white  md:px-6 px-2 md:mt-10 mt-4   mb-6">
-        <legend className="bg-blue-500  text-center text-2xl font-bold text-white px-4 rounded-md">
-          EDUCATION
+      <fieldset className=" text-white mx-auto  md:px-6 px-2 md:mt-5 mt-4   mb-6">
+        <legend className="bg-blue-500 mb-6  text-center text-2xl font-bold text-white px-4 rounded-md">
+          Education
         </legend>
-        <div className="max-w-full  mx-auto  p-0 rounded-md shadow-lg mt-3 text-black overflow-hidden xl:flex 2xl:flex lg:flex md:flex justify-center gap-8 ">
+        <div className="  content-center max-w-7xl   p-0 rounded-md shadow-lg mt-8 text-black overflow-hidden xl:flex 2xl:flex lg:flex md:flex justify-center gap-8 ">
           <motion.div
             variants={textVariants}
             initial="initial"
@@ -74,7 +74,7 @@ const Education = () => {
             />
           </motion.div>
           <motion.div
-            className="w-1/2 h-full flex flex-col gap-5 mt-4 md:ml-10 ml-5 mb-3"
+            className="w-1/2 h-full flex flex-col gap-5  md:ml-10 ml-5 mb-3 mt-1"
             variants={textVariant1}
             initial="initial"
             whileInView="animate"
