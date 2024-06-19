@@ -5,6 +5,7 @@ import Display from "./components/Display/Display";
 import Education from "./components/Education/Education";
 import Experience from "./components/Experience/Experience";
 import Experties from "./components/Experties/Experties";
+import Portfolio from "./components/Portfolio/Portfolio";
 import Project from "./components/Project/Project";
 import ProjectsBtn from "./components/ProjectBtn/ProjectBtn";
 import Skills from "./components/Skills/Skills";
@@ -28,7 +29,7 @@ export default function Home() {
       <Skills />
       <Experties />
       <Project />
-
+      <Portfolio />
       <Contact />
     </div>
   );

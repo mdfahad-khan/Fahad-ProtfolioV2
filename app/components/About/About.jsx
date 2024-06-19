@@ -206,9 +206,9 @@ const About = () => {
                 <Image
                   src="/fahad.png" // Adjust the path based on your project structure
                   alt="about"
-                  className="md:ml-8 sm:ml-0 h-50 object-fit hover:scale-105"
-                  width={200} // Set your desired width
-                  height={230} // Set your desired height
+                  className="md:ml-8 sm:ml-0 h-40 object-fit hover:scale-105"
+                  width={130} // Set your desired width
+                  height={130} // Set your desired height
                 />
               </motion.div>
               <motion.div
@@ -217,7 +217,7 @@ const About = () => {
                 whileInView="animate"
               >
                 <Image
-                  src="/wordpress.png" // Adjust the path based on your project structure
+                  src="/1.png" // Adjust the path based on your project structure
                   alt="about"
                   className="md:ml-8 sm:ml-0"
                   width={150} // Set your desired width

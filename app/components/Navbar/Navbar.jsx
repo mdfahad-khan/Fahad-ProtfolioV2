@@ -164,6 +164,20 @@ const Navbar = () => {
               </Link>
             </motion.li>
           ))}
+          <motion.li
+            className="place-items-center hover:border hover:border-b-4 hover:animate-glow-border border-blue-500 cursor-pointer"
+            variants={textVariants}
+            initial="initial"
+            whileInView="animate"
+          >
+            <a
+              href="https://my-blog-nextjs-nine.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Blogs
+            </a>
+          </motion.li>
         </ul>
       </nav>
       <div className="text-white ">

@@ -12,7 +12,7 @@ const Mar = () => {
           return (
             <li
               key={iconIndex}
-              className="flex flex-col items-center justify-center bg-gray-800 w-40 h-40 mx-5 rounded-md"
+              className="flex flex-col items-center justify-center animate-glow-border bg-gray-800 w-40 h-40 mx-5 rounded-md"
             >
               <IconComponent
                 style={{ color: iconData.color, fontSize: "3.5rem" }}

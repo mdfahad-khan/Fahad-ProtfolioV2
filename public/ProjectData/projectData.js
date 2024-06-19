@@ -35,8 +35,8 @@ const projectData = [
     description:
       "Experience a dynamic online marketplace powered by TypeScript, Tailwind CSS, Nest.js, and Next.js. Seamlessly connecting buyers and sellers of farm-related products and prime land parcels. With distinct user roles including Admin, Manager, Seller, and User, the platform offers a streamlined experience. Featuring a captivating landing page showcasing farm equipment and enticing land listings. Dive into the demo via the project link to witness its functionality firsthand",
     languages: ["NextJs", "NestJs", "Postgresql", "TailwindCSS"],
-    image: "/3.png", // Make sure the image is placed correctly in public/images
-    githubLink: "https://github.com/username/project2",
+    image: "/naturelease.png", // Make sure the image is placed correctly in public/images
+    githubLink: "https://github.com/mdfahad-khan/NatureLease-Nextjs-Nestjs",
     liveLink: "https://live-link2.com",
     icons: {
       NextJs: "SiNextdotjs",
@@ -46,12 +46,26 @@ const projectData = [
     },
   },
   {
+    title: "Aiub Campus Life",
+    description:
+      "Crafted a cutting-edge campus life website using React and Tailwind CSS, offering a user-friendly interface that highlights all essential facilities and activities. The site provides easy access to comprehensive information on campus amenities, fostering a seamless user experience for students and visitors alike",
+    languages: ["ReactJs", "TailwindCSS"],
+    image: "/campus.png", // Make sure the image is placed correctly in public/images
+    githubLink: "https://github.com/mdfahad-khan/Aiub-Campus-Life",
+    liveLink: "https://aiub-campus-life-2a49.vercel.app/",
+    icons: {
+      ReactJs: "FaReact",
+      TailwindCSS: "SiTailwindcss",
+    },
+  },
+  {
     title: "Blood Donation and Healthcare Platform",
     description:
       "A comprehensive platform designed to facilitate blood donation and healthcare support for those in need. With three distinct user roles - Admin, Blood Donor/Fund Donor, and Receiver - the platform enables seamless coordination between donors and recipients. Developed using ASP.NET for backend functionality and Next.js with Tailwind CSS for frontend design, our platform serves as a lifeline for individuals in critical need of healthcare services.",
     languages: ["NextJs", "AspDotNet", "TailwindCSS", "MySQL"],
-    image: "/1.png", // Make sure the image is placed correctly in public/images
-    githubLink: "https://github.com/username/project1",
+    image: "/doctorAppointment.png", // Make sure the image is placed correctly in public/images
+    githubLink:
+      "https://github.com/mdfahad-khan/BloodDonation-HealthCare-Asp.net-Framework-",
     liveLink: "https://live-link1.com",
     icons: {
       NextJs: "SiNextdotjs",
@@ -65,7 +79,7 @@ const projectData = [
     description:
       "Developed a comprehensive C# solution for efficiently managing appointments, from scheduling to maintaining patient records. This system streamlines the entire appointment process, providing an intuitive interface for both doctors and patients. Key features include automated reminders, real-time updates, and secure data handling, enhancing overall efficiency and patient satisfaction.",
     languages: ["C#", "Oracle"],
-    image: "/doctorAppointment.png", // Make sure the image is placed correctly in public/images
+    image: "/doctorAppointment1.png", // Make sure the image is placed correctly in public/images
     githubLink:
       "https://github.com/mdfahad-khan/DoctorAppointmentSystem-c-plsql",
     liveLink: "https://live-link1.com",
@@ -94,7 +108,7 @@ const projectData = [
     languages: ["React"],
     image: "/shop.png", // Make sure the image is placed correctly in public/images
     githubLink: "https://github.com/mdfahad-khan/DreamShop-360",
-    liveLink: "https://live-link1.com",
+    liveLink: "https://dream-shop-360.vercel.app/",
     icons: {
       React: "FaReact",
     },

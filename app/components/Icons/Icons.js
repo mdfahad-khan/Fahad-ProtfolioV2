@@ -8,7 +8,7 @@ const icons = [
   { component: SiPostman, name: "Postman", color: "#FF6C37" },
   {
     component: SiVisualstudiocode,
-    name: "Visual Studio Community",
+    name: "Visual Studio",
     color: "#007ACC",
   },
   { component: FaChrome, name: "Chrome", color: "#4285F4" },
