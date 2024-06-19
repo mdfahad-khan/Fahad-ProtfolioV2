@@ -175,7 +175,7 @@ const Contact = () => {
           </p>
           <p className=" text-slate-300 flex items-center gap-2 text-xl">
             <MdOutlineAttachEmail />
-            <span>Email:info@farseit.com</span>
+            <span>Email: mdfahadkhan01701@gmail.com</span>
           </p>
           <p className=" text-slate-300 flex items-center text-xl gap-2">
             <BiPhone />

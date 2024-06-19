@@ -5,9 +5,9 @@ const projectData = [
     description:
       "Experience a robust e-commerce platform built with the MERN stack (MongoDB, Express, React, Node.js). This website features secure user authentication, role-based access, and a comprehensive admin dashboard. Sellers can manage their products and inventory seamlessly, while buyers enjoy a smooth shopping experience with advanced search and filter options. The platform also integrates payment gateways and Cloudinary for image storage, ensuring a responsive and efficient user experience.",
     languages: ["React", "Express", "NodeJs", "MongoDB"],
-    image: "/1.png", // Make sure the image is placed correctly in public/images
-    githubLink: "https://github.com/username/project1",
-    liveLink: "https://live-link1.com",
+    image: "/project1.png", // Make sure the image is placed correctly in public/images
+    githubLink: "https://github.com/mdfahad-khan/Ecommerce-MERN",
+    liveLink: "https://ecommerce-mern-lovat-xi.vercel.app/",
     icons: {
       React: "FaReact",
       Express: "SiExpress",
@@ -20,8 +20,8 @@ const projectData = [
     description:
       "Developed the frontend of a modern dropshipping website using React, Bootstrap, Sass, and TailwindCSS. The platform offers a sleek, responsive user interface designed to enhance the shopping experience. The website integrates seamlessly with a Django backend, ensuring efficient data handling and robust performance. This project showcases my ability to create visually appealing and highly functional web interfaces.",
     languages: ["React", "Bootstrap", "Sass", "TailwindCSS"],
-    image: "/1.png", // Make sure the image is placed correctly in public/images
-    githubLink: "https://github.com/username/project1",
+    image: "/project2.png", // Make sure the image is placed correctly in public/images
+    githubLink: " ",
     liveLink: "http://139.59.79.215/",
     icons: {
       React: "FaReact",
@@ -65,8 +65,9 @@ const projectData = [
     description:
       "Developed a comprehensive C# solution for efficiently managing appointments, from scheduling to maintaining patient records. This system streamlines the entire appointment process, providing an intuitive interface for both doctors and patients. Key features include automated reminders, real-time updates, and secure data handling, enhancing overall efficiency and patient satisfaction.",
     languages: ["C#", "Oracle"],
-    image: "/1.png", // Make sure the image is placed correctly in public/images
-    githubLink: "https://github.com/username/project1",
+    image: "/doctorAppointment.png", // Make sure the image is placed correctly in public/images
+    githubLink:
+      "https://github.com/mdfahad-khan/DoctorAppointmentSystem-c-plsql",
     liveLink: "https://live-link1.com",
     icons: {
       "C#": "SiCsharp",
@@ -78,9 +79,9 @@ const projectData = [
     description:
       "Seamlessly manage a super shop with distinct roles for admin, seller, and buyer, streamlining operations and enhancing the overall customer experience. The admin can oversee all shop activities, manage users, and generate insightful reports. Sellers have access to inventory management, product listings, and order tracking, ensuring efficient workflow. Buyers enjoy a smooth shopping experience with easy navigation, secure payment options, and real-time order updates. Explore the project link for a firsthand demo and see how this comprehensive system can revolutionize shop management.",
     languages: ["C#", "Oracle"],
-    image: "/1.png", // Make sure the image is placed correctly in public/images
-    githubLink: "https://github.com/username/project1",
-    liveLink: "https://live-link1.com",
+    image: "/superShop.png", // Make sure the image is placed correctly in public/images
+    githubLink: "https://github.com/mdfahad-khan/SuperShopManagementSystem-C-",
+    liveLink: "",
     icons: {
       "C#": "SiCsharp",
       Oracle: "SiOracle",
@@ -91,8 +92,8 @@ const projectData = [
     description:
       "A dynamic e-commerce platform created with  CSS, JavaScript, Next.js, Revolutionizing the shopping experience by offering a comprehensive range of products, starting with clothing and electronics, with plans for expansion. Visit the project link for a firsthand demonstration",
     languages: ["React"],
-    image: "/1.png", // Make sure the image is placed correctly in public/images
-    githubLink: "https://github.com/username/project1",
+    image: "/shop.png", // Make sure the image is placed correctly in public/images
+    githubLink: "https://github.com/mdfahad-khan/DreamShop-360",
     liveLink: "https://live-link1.com",
     icons: {
       React: "FaReact",

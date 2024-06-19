@@ -204,7 +204,7 @@ const About = () => {
                 className=""
               >
                 <Image
-                  src="/visual.png" // Adjust the path based on your project structure
+                  src="/fahad.png" // Adjust the path based on your project structure
                   alt="about"
                   className="md:ml-8 sm:ml-0 h-50 object-fit hover:scale-105"
                   width={200} // Set your desired width
