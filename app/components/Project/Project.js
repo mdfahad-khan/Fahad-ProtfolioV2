@@ -118,7 +118,7 @@ const Project = () => {
               controlsArray.current[index].start("hidden");
             }
           },
-          { threshold: 0.9 }
+          { threshold: 0.7 }
         )
     );
 
@@ -147,6 +147,11 @@ const Project = () => {
       }}
       id="projects"
     >
+      <div className="item-center  text-center">
+        <button className="bg-blue-500 mt-4 items-center text-center text-2xl font-bold text-white px-4 rounded-md">
+          Project I Build
+        </button>
+      </div>
       <div className="container mx-auto py-4">
         {projectData.map((project, index) => {
           const controls = controlsArray.current[index];

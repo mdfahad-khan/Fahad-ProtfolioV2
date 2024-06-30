@@ -13,8 +13,8 @@ const Footer = () => {
     <footer className=" bg-gray-900 pl-8 pr-8">
       <div className="max-w-screen-xl px-4 pt-8 pb-6 mx-auto sm:px-6 lg:px-8 lg:pt-12">
         <div className="pt-6 mt-12 border-t border-gray-800">
-          <div className="text-center sm:flex sm:justify-between sm:text-left ">
-            <div className="flex gap-4 text-xl">
+          <div className="text-center flex flex-col items-center gap-3 md:flex-row justify-between  ">
+            <div className="flex gap-4 text-[28px]">
               <Link
                 href="/"
                 className="inline-block text-[#3db0e1] underline transition hover:text-teal-500/75"
@@ -28,35 +28,11 @@ const Footer = () => {
                 <FaLinkedin />
               </Link>
             </div>
-            <div className="text-xl text-gray-400 flex gap-4 ">
-              <Link
-                href="/"
-                className="inline-block text-[#3db0e1] underline transition hover:text-teal-500/75"
-              >
-                <FaFacebook />
-              </Link>
-
-              <Link
-                href="/"
-                className="inline-block text-[#3db0e1] underline transition hover:text-teal-500/75"
-              >
-                <FaTwitter />
-              </Link>
-              <Link
-                href="/"
-                className="inline-block text-[#3db0e1] underline transition hover:text-teal-500/75"
-              >
-                <FaInstagram />
-              </Link>
-              <Link
-                href="/"
-                className="inline-block text-[#3db0e1] underline transition hover:text-teal-500/75"
-              >
-                <FaInstagram />
-              </Link>
+            <div className="text-[18px]  text-gray-400 flex gap-4 font-semibold  ">
+              Have a Good Day!!
             </div>
 
-            <p className="mt-4 text-[15px] font-semibold text-gray-300 sm:order-first sm:mt-0">
+            <p className=" text-[18px] font-semibold text-gray-400 sm:order-first sm:mt-0">
               Evan Ahmed Fahad
             </p>
           </div>

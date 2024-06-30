@@ -96,7 +96,7 @@ const Education = () => {
                 </span>
               </div>
               <span class="bottom-text  md:text-2xl md:hover:text-[20px] text-[10px] ">
-                2020-2024
+                2020-2023
               </span>
             </div>
 

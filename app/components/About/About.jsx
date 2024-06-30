@@ -206,7 +206,7 @@ const About = () => {
                 <Image
                   src="/fahad.png" // Adjust the path based on your project structure
                   alt="about"
-                  className="md:ml-8 sm:ml-0 h-40 object-fit hover:scale-105"
+                  className="md:ml-8 sm:ml-0 h-32 object-fit hover:scale-105"
                   width={130} // Set your desired width
                   height={130} // Set your desired height
                 />
@@ -217,9 +217,9 @@ const About = () => {
                 whileInView="animate"
               >
                 <Image
-                  src="/1.png" // Adjust the path based on your project structure
+                  src="/fahad1.jpg" // Adjust the path based on your project structure
                   alt="about"
-                  className="md:ml-8 sm:ml-0"
+                  className="md:ml-8 sm:ml-0 h-32 w-32"
                   width={150} // Set your desired width
                   height={150} // Set your desired height
                 />
@@ -232,7 +232,7 @@ const About = () => {
                 whileInView="animate"
               >
                 <Image
-                  src="/4.png" // Adjust the path based on your project structure
+                  src="/fahad2.jpg" // Adjust the path based on your project structure
                   alt="about"
                   className="md:ml-8 sm:ml-0 object-fit"
                   width={130} // Set your desired width
@@ -245,7 +245,7 @@ const About = () => {
                 whileInView="animate"
               >
                 <Image
-                  src="/3.png" // Adjust the path based on your project structure
+                  src="/fahad3.jpg" // Adjust the path based on your project structure
                   alt="about"
                   className="md:ml-8 sm:ml-0 object-fit"
                   width={200} // Set your desired width
@@ -267,9 +267,9 @@ const About = () => {
             >
               <p className="text-[11px] sm:text-[13px] md:text-[14] lg:text-[16px] xl:text-[17px] 2xl:text-[23px]">
                 I've just completed a rigorous journey through the halls of
-                American International University, emerging with a Bachelor's
-                degree in Computer Science Engineering. My academic adventure
-                exposed me to the core principles of algorithms, data
+                American International University-Bangladesh, emerging with a
+                Bachelor's degree in Computer Science Engineering. My academic
+                adventure exposed me to the core principles of algorithms, data
                 structures, software engineering, and more, fueling my desire to
                 apply these skills in a real-world setting. Proficient in
                 Python, HTML, CSS, JavaScript, typescript, Nodejs,Next js React
