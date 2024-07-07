@@ -171,7 +171,7 @@ const Navbar = () => {
             whileInView="animate"
           >
             <a
-              href="https://my-blog-nextjs-nine.vercel.app/"
+              href="https://fahad-blogs.onrender.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
