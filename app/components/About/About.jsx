@@ -185,7 +185,7 @@ const About = () => {
       className="bg-[#050816] md:px-5 px-2 min-h-screen flex flex-col justify-end"
       id="about"
     >
-      <fieldset className="md:h-[80vh] text-white border-2 md:px-6 px-2 animate-glow-border mb-6">
+      <fieldset className="md:h-[80vh] text-white  md:px-6 px-2 mb-6">
         <legend className="bg-blue-500  text-center text-2xl font-bold text-white px-4 rounded-md">
           About Me
         </legend>

@@ -123,7 +123,7 @@ const Navbar = () => {
       bg-[#061e3d] justify-around w-full h-[70px] shadow-md border-b-2 border-gray-600 animate-glow-border border-l-0 "
     >
       <div className="text-white md:ml-20 font-pacifico text-xl md:text-2xl font-bold">
-        Evan Ahmed
+        Fahad Portfolio
       </div>
 
       <nav
@@ -156,7 +156,7 @@ const Navbar = () => {
               <Link
                 href={item.path}
                 onClick={(event) => scrollToSection(event, item.text)}
-                className={`navlink w-[70px] grid place-items-center hover:border  hover:border-b-4  hover:animate-glow-border border-blue-500  ${
+                className={`navlink w-[70px] grid place-items-center text-[14px] uppercase font-semibold hover:border  hover:border-b-4  hover:animate-glow-border border-blue-500  ${
                   activeSection === item.text ? "text-blue" : ""
                 }`}
               >
@@ -165,7 +165,7 @@ const Navbar = () => {
             </motion.li>
           ))}
           <motion.li
-            className="place-items-center hover:border hover:border-b-4 hover:animate-glow-border border-blue-500 cursor-pointer"
+            className="place-items-center hover:border hover:border-b-4 text-[14px] uppercase font-semibold hover:animate-glow-border border-blue-500 cursor-pointer"
             variants={textVariants}
             initial="initial"
             whileInView="animate"

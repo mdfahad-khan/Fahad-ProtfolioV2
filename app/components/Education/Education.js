@@ -74,7 +74,7 @@ const Education = () => {
             />
           </motion.div>
           <motion.div
-            className="w-1/2 h-full flex flex-col gap-5  md:ml-10 ml-5 mb-3 mt-1"
+            className="w-1/2 h-full flex flex-col gap-5  md:ml-10 ml-5 mb-3 mt-5 md:mt-1"
             variants={textVariant1}
             initial="initial"
             whileInView="animate"

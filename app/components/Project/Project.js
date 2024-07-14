@@ -11,6 +11,7 @@ import {
   FaSass,
   FaDjango,
 } from "react-icons/fa";
+
 import {
   SiExpress,
   SiMongodb,
@@ -104,6 +105,7 @@ const iconVariants = {
 const Project = () => {
   const controlsArray = useRef(projectData.map(() => useAnimation()));
   const projectRefs = useRef([]);
+  const projectSectionRef = useRef(null);
 
   useEffect(() => {
     projectRefs.current = projectRefs.current.slice(0, projectData.length);
@@ -139,6 +141,7 @@ const Project = () => {
 
   return (
     <section
+      ref={projectSectionRef}
       className="min-h-screen"
       style={{
         // Gradient from top to bottom

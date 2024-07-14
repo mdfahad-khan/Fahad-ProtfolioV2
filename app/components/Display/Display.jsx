@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import Works from "../Works/Works";
 import Image from "next/image";
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo, useRef } from "react";
 
 const imgVariants = {
   initial: {
@@ -138,6 +138,14 @@ const Display = () => {
 
     return () => clearTimeout(timeoutId);
   }, [textIndex, strings]);
+
+  const projectSectionRef = useRef(null);
+
+  const scrollToProjects = () => {
+    if (projectSectionRef.current) {
+      projectSectionRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section
       className="w-full min-h-[calc(100vh-800px)]  flex justify-between bg-[#041e42] sm:min-h-[calc(100vh-300px)] md:min-h-[calc(100vh-400px)] xl:min-h-[calc(100vh-80px)] 2xl:min-h-[calc(100vh-700px)] bg-cover bg-center items-center"
@@ -224,11 +232,7 @@ const Display = () => {
           </motion.div>
         </div>
         <div className="flex flex-col w-full mb-16  items-center justify-center">
-          <motion.div
-            variants={textVariants}
-            initial="initial"
-            whileInView="animate"
-          >
+          <motion.div>
             <div class="flex  w-full items-center justify-center ">
               <h1 class="relative top-0 w-fit h-auto  justify-center flex bg-gradient-to-r items-center from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-2xl mt-4 md:mt-0 md:text-5xl font-bold text-transparent text-center select-auto">
                 Hi, I'm {typedText}
@@ -240,7 +244,7 @@ const Display = () => {
             variants={textVariants1}
             initial="initial"
             whileInView="animate"
-            className="duration-400  mt-3 text-white w-[300px] sm:w-[400px] md:w-[500px] lg:w-[550px] xl:w-[750px] 2xl:w-[850px] text-[8px] sm:text-[10px] md:text-[13px] lg:text-[16px] xl:text-[20px] 2xl:text-[26px]"
+            className="duration-400  mt-3 text-white w-[300px] sm:w-[400px] md:w-[500px] lg:w-[550px] xl:w-[750px] 2xl:w-[850px] text-[8px] sm:text-[10px] md:text-[13px] lg:text-[16px] xl:text-[20px] 2xl:text-[26px] text-center"
           >
             I love to Develop user interfaces and web applications with latest
             technologies. Transforming ideas into reality through code.
@@ -252,10 +256,16 @@ const Display = () => {
             initial="initial"
             whileInView="animate"
           >
-            <button className="bg-[#3DB0E1] text-sm md:text-xl hover:bg-[#2881a7] px-5 py-1">
+            <a
+              href="#contact"
+              className="bg-[#3DB0E1] text-sm md:text-xl hover:bg-[#2881a7] px-5 py-1"
+            >
               HIRE ME
-            </button>
-            <button className="relative px-5 py-1 border-2 border-transparent hover:animate-glow-border">
+            </a>
+            <a
+              href="#projects"
+              className="relative px-5 py-1 border-2 border-transparent hover:animate-glow-border"
+            >
               <svg className="absolute inset-0 w-full h-full">
                 <rect
                   x="1"
@@ -267,8 +277,8 @@ const Display = () => {
                   strokeDasharray="100%"
                 />
               </svg>
-              <section className="relative z-10">MY WORK</section>
-            </button>
+              <span className="relative z-10">MY WORK</span>
+            </a>
           </motion.div>
         </div>
       </div>

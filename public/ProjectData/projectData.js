@@ -31,6 +31,21 @@ const projectData = [
     },
   },
   {
+    title: "Fahad Blogs",
+    description:
+      "I developed a dynamic personal blog using the MERN stack, emphasizing both front-end interactivity with React and robust back-end functionality with Node.js and MongoDB. This project features user authentication for commenting, ensuring a secure and engaging experience. Incorporating a search functionality further enhances usability, showcasing my ability to create responsive and functional web applications.",
+    languages: ["React", "Express", "NodeJs", "MongoDB"],
+    image: "/blogs.png", // Make sure the image is placed correctly in public/images
+    githubLink: "https://github.com/mdfahad-khan/Fahad-Blog-Mern",
+    liveLink: "https://fahad-blogs.onrender.com/",
+    icons: {
+      React: "FaReact",
+      Express: "SiExpress",
+      NodeJs: "FaNodeJs",
+      MongoDB: "SiMongodb",
+    },
+  },
+  {
     title: "Nature Lease a inovative solution",
     description:
       "Experience a dynamic online marketplace powered by TypeScript, Tailwind CSS, Nest.js, and Next.js. Seamlessly connecting buyers and sellers of farm-related products and prime land parcels. With distinct user roles including Admin, Manager, Seller, and User, the platform offers a streamlined experience. Featuring a captivating landing page showcasing farm equipment and enticing land listings. Dive into the demo via the project link to witness its functionality firsthand",
@@ -101,18 +116,18 @@ const projectData = [
       Oracle: "SiOracle",
     },
   },
-  {
-    title: "Dream Shop 360 (E-commerce)",
-    description:
-      "A dynamic e-commerce platform created with  CSS, JavaScript, Next.js, Revolutionizing the shopping experience by offering a comprehensive range of products, starting with clothing and electronics, with plans for expansion. Visit the project link for a firsthand demonstration",
-    languages: ["React"],
-    image: "/shop.png", // Make sure the image is placed correctly in public/images
-    githubLink: "https://github.com/mdfahad-khan/DreamShop-360",
-    liveLink: "https://dream-shop-360.vercel.app/",
-    icons: {
-      React: "FaReact",
-    },
-  },
+  // {
+  //   title: "Dream Shop 360 (E-commerce)",
+  //   description:
+  //     "A dynamic e-commerce platform created with  CSS, JavaScript, Next.js, Revolutionizing the shopping experience by offering a comprehensive range of products, starting with clothing and electronics, with plans for expansion. Visit the project link for a firsthand demonstration",
+  //   languages: ["React"],
+  //   image: "/shop.png", // Make sure the image is placed correctly in public/images
+  //   githubLink: "https://github.com/mdfahad-khan/DreamShop-360",
+  //   liveLink: "https://dream-shop-360.vercel.app/",
+  //   icons: {
+  //     React: "FaReact",
+  //   },
+  // },
   // Add more projects as needed
 ];
 

@@ -93,7 +93,7 @@ const Logo = ({ className }) => {
         </motion.span>
 
         <motion.div
-          className=" text-2xl mt-0 md:mt-0 md:text-xl italic font-semibold  text-blue-400  "
+          className=" text-2xl mt-0 md:mt-0 md:text-xl italic   text-blue-400  "
           style={{ letterSpacing: "-0.01em" }}
           variants={textVariants3}
           initial="initial"
