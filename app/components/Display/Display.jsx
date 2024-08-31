@@ -113,11 +113,7 @@ const sliderVariants1 = {
 const Display = () => {
   const [textIndex, setTextIndex] = useState(0);
   const strings = useMemo(
-    () => [
-      "  Frontend Developer",
-      "  Front-End-Developer",
-      "  Full-Stact Developer",
-    ],
+    () => ["  Youtuber", "  Front-End-Developer", "  Frelancer"],
     []
   );
   const [typedText, setTypedText] = useState("");

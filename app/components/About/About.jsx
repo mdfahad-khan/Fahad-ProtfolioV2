@@ -1,22 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FcDownload } from "react-icons/fc";
-
-// const imgVariants = {
-//   initial: {
-//     opacity: 0,
-//   },
-//   animate: {
-//     opacity: 1,
-
-//     transition: {
-//       duration: 2,
-//       staggerChildren: 0.1,
-//     },
-//   },
-// };
 
 const imgVariants = {
   initial: {
@@ -152,7 +139,7 @@ const div4 = {
     },
   },
 };
-const About = () => {
+const About = ({ file, downloadName }) => {
   const [isDownloading, setIsDownloading] = useState(false);
   const [progress, setProgress] = useState(0);
   const [isComplete, setIsComplete] = useState(false);
@@ -297,24 +284,34 @@ const About = () => {
                     justifyContent: "center",
                     width: "100%",
                   }}
+                  asChild
                 >
-                  {!isDownloading && <FcDownload className="mt-1" />}
-                  <span>
-                    {isDownloading ? (
-                      <div className="flex">
-                        <Image
-                          src="/download.gif"
-                          alt="download"
-                          width={20}
-                          height={20}
-                          style={{ marginRight: "10px" }}
-                        />
-                        {`${progress}% Downloading...`}
-                      </div>
-                    ) : (
-                      "Download CV"
-                    )}
-                  </span>
+                  <a
+                    href={file}
+                    className="font-bold flex"
+                    download={downloadName}
+                  >
+                    {!isDownloading && <FcDownload className="mt-1" />}
+                    <span>
+                      {isDownloading ? (
+                        <div className="flex">
+                          <Image
+                            src="/download.gif"
+                            alt="download"
+                            width={20}
+                            height={20}
+                            style={{ marginRight: "10px" }}
+                          />
+
+                          {`${progress}% Downloading...`}
+                        </div>
+                      ) : (
+                        "Download CV"
+                      )}
+                    </span>
+                  </a>
+
+                  {/* <Link href="/resume">Get Resume</Link> */}
                 </button>
                 {isDownloading && (
                   <div style={{ marginTop: "0px" }}>
@@ -345,7 +342,7 @@ const About = () => {
                     style={{
                       marginTop: "10px",
                       textAlign: "center",
-                      color: "green",
+                      color: "white",
                     }}
                   >
                     Download Complete!
