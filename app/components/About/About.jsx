@@ -286,15 +286,11 @@ const About = ({ file, downloadName }) => {
                   }}
                   asChild
                 >
-                  <a
-                    href={file}
-                    className="font-bold flex"
-                    download={downloadName}
-                  >
+                  <a href={file} className=" flex" download={downloadName}>
                     {!isDownloading && <FcDownload className="mt-1" />}
                     <span>
                       {isDownloading ? (
-                        <div className="flex">
+                        <div className="flex flex-row">
                           <Image
                             src="/download.gif"
                             alt="download"
@@ -302,8 +298,7 @@ const About = ({ file, downloadName }) => {
                             height={20}
                             style={{ marginRight: "10px" }}
                           />
-
-                          {`${progress}% Downloading...`}
+                          <span>{`${progress}% Downloading...`}</span>
                         </div>
                       ) : (
                         "Download CV"
